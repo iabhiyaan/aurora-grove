@@ -1,0 +1,68 @@
+// our custom css is preprocessed here
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+    font-weight: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    .navbar-brand h3 {
+        font-weight: 100;
+    }
+
+    .nav-item {
+        font-size: 1.2rem;
+    }
+
+    .nav-link:hover {
+        border-bottom: 1px solid white;
+    }
+}
+
+#showcase {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("../images/main.jpeg") bottom center / cover no-repeat;
+    height: 750px;
+    h1 {
+        line-height: 1;
+    }
+    #book {
+        font-size: 1.4rem;
+        border-radius: 2rem;
+    }
+
+}
+
+#quotes {
+    i {
+        opacity: 0.3;
+    }
+}
+
+#footer {
+    font-weight: 100;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background: #1f1f1f;
+        .nav-link:hover {
+            border-bottom: 0;
+        }
+    }
+
+    #showcase {
+        min-height: 400px;
+        h1 {
+            line-height: 1.4;
+            font-size: 2.9rem;
+        }
+    }
+}

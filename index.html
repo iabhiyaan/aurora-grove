@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aurora Grove</title>
+</head>
+
+<body data-spy="scroll" data-target="#my-nav">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand text-light" href="index.html">
+            <h2>Aurora Grove</h2>
+        </a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+                <i class="fas fa-bomb"></i>
+            </span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#showcase">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#icons">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#explore">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#newsletter">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#booking-modal" data-toggle="modal">Book</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase" class="d-flex align-items-center">
+        <div id="header" class="container text-white text-center">
+            <h3 class="display-5 mb-0">MODERN CAMPING</h3>
+            <h1 class="display-1">AURORA GROVE</h1>
+            <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, neque!</p>
+            <button id="book" class="btn btn-primary btn-lg px-5" data-toggle="modal" data-target="#booking-modal">Book
+                Now</button>
+            <!-- Modal -->
+            <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog" aria-labelledby="booking-modal-title"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-dark" id="booking-modal-title">New Booking</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-left text-dark">
+                            <p>Please fill out this form and we will get back you as soon as possible</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="f-name">Email Address</label>
+                                    <input id="f-name" class="form-control" type="email" placeholder="name@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="adults">Number of Adults</label>
+                                    <select class="custom-select form-control" id="adults">
+                                        <option selected value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="children">Number of Children</label>
+                                    <select id="children" class="form-control custom-select">
+                                        <option selected value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="requests">Additional Requests</label>
+                                    <textarea id="requests" rows="3" class="form-control">
+                                    </textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Submit Requests</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="icons">
+        <div class="container text-center ">
+            <h2 class="pt-5">YOU SHOW UP, WE PITCH THE TENT.</h2>
+            <div class="row">
+                <div class="col-md-4 p-3">
+                    <img src="images/icons/tent.png" alt="" class="img-fluid d-none d-md-inline">
+                    <h3>Amenities You Want</h3>
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit?</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="images/icons/campfire.png" alt="" class="img-fluid d-none d-md-inline">
+                    <h3>Amenities You Want</h3>
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit?</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="images/icons/nature.png" alt="" class="img-fluid d-none d-md-inline">
+                    <h3>Amenities You Want</h3>
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="explore">
+        <div class="container pt-5 text-center">
+            <div class="row">
+                <h3 class="text-uppercase mb-5">We have created a camping experience that's turn-key and hassle free</h3>
+                <div class="col-md-6 p-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/winter.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary text-uppercase">Experience</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/dogs.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary text-uppercase">Explore</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quotes">
+        <div class="container text-center pt-5">
+            <h3 class="text-uppercase">what our happy campers are saying</h3>
+            <div class="row">
+                <div class="col-md-4 my-2">
+                    <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                    <blockquote class="blockquote">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate enim
+                            soluta doloribus eligendi repellat saepe dignissimos omnis, veniam tempore.</p>
+                        <footer class="blockquote-footer">Mark Tawain</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 my-2">
+                    <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                    <blockquote class="blockquote">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate enim
+                            soluta doloribus eligendi repellat saepe dignissimos omnis, veniam tempore.</p>
+                        <footer class="blockquote-footer">Mark Tawain</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 my-2">
+                    <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                    <blockquote class="blockquote">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate enim
+                            soluta doloribus eligendi repellat saepe dignissimos omnis, veniam tempore.</p>
+                        <footer class="blockquote-footer">Mark Tawain</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-7 mb-5">
+                    <div id="section-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/slider/caribou.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/slider/coffee.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/slider/fire.png" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/slider/trees.png" alt="Fourth slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#section-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#section-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-5">
+                    <h3 class="text-uppercase">camping made cozy</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque numquam hic
+                        error magnam ducimus inventore et quisquam praesentium accusantium temporibus nemo cum
+                        mollitia, libero vel repellendus in alias atque Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Omnis nulla iste, maxime mollitia aspernatur excepturi consequuntur repellat
+                        facilis possimus magni.</p>
+                    <a href="#" class="text-capitalize ">see for yourself <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center">
+            <h3 class="text-uppercase">what others are saying</h3>
+            <p class="text-primary text-uppercase mb-4">#auroragrove</p>
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <img src="images/gallery/social1.png" alt="" class="img-fluid mb-4">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img src="images/gallery/social2.png" alt="" class="img-fluid mb-4">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img src="images/gallery/social3.png" alt="" class="img-fluid mb-4">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img src="images/gallery/social4.png" alt="" class="img-fluid mb-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <img src="images/gallery/social5.png" alt="" class="img-fluid mb-4">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img src="images/gallery/social6.png" alt="" class="img-fluid mb-4">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img src="images/gallery/social7.png" alt="" class="img-fluid mb-4">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img src="images/gallery/social8.png" alt="" class="img-fluid mb-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5 text-center">
+            <div class="row">
+                <div class="col-12">
+                    <blockquote class="blockquote">
+                        <i class="fas fa-quote-left fa-2x mb-3"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quas
+                            pariatur rerum delectus magnam officiis dignissimos, consequuntur quidem laudantium!
+                            Impedit!</p>
+                        <footer class="blockquote-footer">Kitty Cat</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="bg-dark">
+        <div class="container text-white text-center py-5">
+            <p class="lead text-uppercase">join our newsletter for deals and updates and offers</p>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Your Email" aria-label="Recipient's "
+                                aria-describedby="my-addon">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary">Join Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="p-3 bg-secondary">
+        <div class="container">
+            <ul class="nav justify-content-center flex-column text-center flex-sm-row ">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#explore">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#explore">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#newsletter">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#booking-modal" data-toggle="modal">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>
